@@ -24,3 +24,30 @@ document.addEventListener('DOMContentLoaded', () => {
             behavior: 'smooth' // Smooth scrolling animation
         });
     });
+
+window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) { // Show the button after scrolling down 300px
+            backToTopButton.style.opacity = '1';
+            backToTopButton.style.visibility = 'visible';
+        } else {
+            backToTopButton.style.opacity = '0';
+            backToTopButton.style.visibility = 'hidden';
+        }
+    });
+});
+
+// 3. Responsive Navigation Menu (for smaller screens)
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('header');
+    const menuButton = document.createElement('button');
+    menuButton.classList.add('menu-button');
+    menuButton.innerHTML = '☰'; // Use a hamburger icon
+    header.appendChild(menuButton);
+
+    const nav = document.querySelector('header nav');
+    nav.classList.add('nav-collapsed'); // Add a class for collapsed state
+
+    menuButton.addEventListener('click', () => {
+        nav.classList.toggle('nav-expanded'); // Toggle the expanded class
+        nav.classList.toggle('nav-collapsed');
+    });

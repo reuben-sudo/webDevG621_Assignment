@@ -134,3 +134,152 @@ header .header-actions .social-icon {
     flex: 1;
     padding-right: 40px;
 }
+
+.hero-section h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-section h2 {
+    color: #1abc9c;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.hero-section .hero-buttons button {
+    margin-right: 15px;
+}
+
+.hero-section .hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-section .hero-image img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 15px; /* Add some rounding if needed */
+}
+
+.hero-section .sidebar {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section .sidebar .sidebar-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Biography Section */
+.bio-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.bio-section .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.bio-section .bio-image {
+    flex: 1;
+    text-align: center;
+}
+
+.bio-section .bio-image img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.bio-section .bio-content {
+    flex: 1;
+}
+
+.bio-section h3 {
+    color: #777;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.bio-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.bio-section .contact-info p {
+    margin-bottom: 8px;
+}
+
+.bio-section .social-links {
+    margin-top: 20px;
+}
+
+.bio-section .social-links p {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.bio-section .social-links a {
+    color: #1abc9c;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.bio-section .bio-buttons {
+    margin-top: 30px;
+}
+
+.bio-section .bio-buttons button {
+    margin-right: 15px;
+}
+
+/* Services Section */
+.services-section {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.services-section .services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.services-section .service-item {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    flex: 1; /* Distribute space evenly */
+    max-width: 300px; /* Adjust as needed */
+}
