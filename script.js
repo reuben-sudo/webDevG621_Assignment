@@ -51,3 +51,24 @@ document.addEventListener('DOMContentLoaded', () => {
         nav.classList.toggle('nav-expanded'); // Toggle the expanded class
         nav.classList.toggle('nav-collapsed');
     });
+
+        // Close menu when a link is clicked (optional)
+        const navLinks = document.querySelectorAll('header nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (nav.classList.contains('nav-expanded')) {
+                    nav.classList.remove('nav-expanded');
+                    nav.classList.add('nav-collapsed');
+                }
+            });
+        });
+    
+        // Make the menu collapsible on wider screens as well
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) { // Or whatever breakpoint you use
+                 nav.classList.remove('nav-expanded');
+                 nav.classList.remove('nav-collapsed');
+            }
+        });
+    });
+    
